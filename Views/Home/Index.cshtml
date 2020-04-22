@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SalesTax.DataAccess.Models.TaxJar.MockReqRepo>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Quantity</th>
+                    <th>Unit_Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach ( var item in Model )
+                {
+                <tr>
+                    <td> @item.Id</td>
+                    <td> @item.quantity</td>
+                    <td> @item.unit_price</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </body>
+    </html>
